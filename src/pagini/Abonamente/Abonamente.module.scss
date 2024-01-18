@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+
+.abonamenteContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    @include responsive_W750px {
+        align-items: center;
+    }
+
+}
+
+.abonamentTitle {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-family: Papyrus, fantasy;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+    }
+
+
+    @include responsive_W750px {
+
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.abonamente {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+
+    @include responsive_W750px {
+        flex-direction: column;
+        align-items: center;
+    }
+}
